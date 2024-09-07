@@ -13,6 +13,7 @@ function listenServer(): void {
 
 export function startServer(): void {
   listenServer();
+  Routes.initializeMiddlewares(app);
   Routes.initializeRoutes(app);
 }
 
